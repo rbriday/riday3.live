@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    
+    <title>Riday - personal portfolio Html Template</title>
+
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="assets/scripts/jquery.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.custom.min.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/shCore.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/blueprint-css/shCoreDefault.css" />
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                // Cache selectors
+                var lastId,
+                    topMenu = $(".menu .alpha"),
+                    topMenuHeight = topMenu.outerHeight() + 15,
+                    // All list items
+                    menuItems = topMenu.find("a"),
+                    canUpdateURL = typeof history.pushState === "function" ? true : false,
+                    // Anchors corresponding to menu items
+                    scrollItems = menuItems.map(function () {
+                        var item = $($(this).attr("href"));
+                        if (item.length) {
+                            return item;
+                        }
+                    });
+
+                // Bind click handler to menu items
+                // so we can get a fancy scroll animation
+                menuItems.click(function (e) {
+                    var href = $(this).attr("href"),
+                        offsetTop = $(href).offset().top - topMenuHeight + 1;
+
+                    $('html, body').stop().animate({
+                        scrollTop: offsetTop
+                    }, 300);
+                    e.preventDefault();
+                });
+
+                // Bind to scroll
+                $(window).scroll(function () {
+                    // Get container scroll position
+                    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+                    // Get id of current scroll item
+                    var cur = scrollItems.map(function () {
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+                    // Get the id of the current element
+                    cur = cur[cur.length - 1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    if (lastId !== id) {
+                        lastId = id;
+                        // Set/remove active class
+                        menuItems
+                            .parents('li').removeClass("active").end()
+                            .filter("[href=#" + id + "]").parent('li').addClass("active")
+                            .parents('li').addClass('active');
+
+                        if (canUpdateURL) {
+                            history.pushState(null, null, window.location.href.split('#').shift() + '#' + id);
+                        } else {
+                            var $section = $('#' + id);
+
+                            $section.attr('id', '');
+                            window.location.hash = '#' + id;
+                            $section.attr('id', id);
+                        }
+                    }
+                });
+
+                hashname = window.location.hash.replace('#', '');
+
+                $('.menu li').removeClass('active');
+                $('.menu li a[href=#' + hashname + ']')
+                    .parent('li').addClass('active')
+                    .parents('li').addClass('active');
+
+                elem = $('#' + hashname);
+
+                if (hashname.length > 1) {
+                    $('body, html').animate({
+                        scrollTop: $(elem).offset().top - topMenuHeight - 315
+                    }, 500, 'easeInOutCubic');
+                };
+            })
+        })(jQuery);
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="docs-header-bg">
+        
+        <div class="docs-header">
+
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+
+            <h1 class="center">Documentation</h1>
+
+            <p>A Complete Guide of <b>Riday </b>personal portfolio HTML Template</p>
+
+            <div>
+                <a href="http://themeforest.net/user/themepoo/" target="_blank" class="header-button">Support</a>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <div class="container">
+
+        <!--      Section       -->
+
+        <div class="menu">
+            <ol class="alpha">
+                <li><a href="#information">General Info</a></li>
+                <li><a href="#folder-struc">Folder Structure</a></li>
+                <li><a href="#how-to">How To?</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ol>
+        </div>        
+
+        <div class="subitems">
+            
+            <!-- General Informations -->
+            <h3 id="information"><strong>General Informations</strong> - <a href="#information">top</a></h3>
+
+            <p><b>Riday | HTML Template for Personal Portfolio </b> is uniquely developed in HTML to make websites with a modern look.
+    HTML files are well organized and named accordingly, so its very easy to customize and update.
+    Total of 04 pages have been included here.</p>
+
+            <hr>
+
+            <!-- HTML Folder Structure -->
+            <h3 id="folder-struc"><strong>HTML Folder Structure</strong> - <a href="#information">top</a></h3>
+
+            <ul class="folder-struc">
+
+                <li class="file folder">Documentation</li>
+				<ul class="margin-left">
+					<li class="file folder">assets</li>
+					<li class="file page">index.html</li>
+                </ul>
+                
+                <li class="file folder">HTML</li>
+                <ul class="folder-struc margin-left">
+                               
+                    
+                    <li>
+                        <ul class="margin-left">
+                            <li class="file folder">css</li>
+                            <li class="file folder">fonts</li>
+                            <li class="file folder">images</li>
+                            <li class="file folder">js</li>
+                        </ul>
+                    </li>
+                
+
+                
+                    <li class="file page">about.html</li>
+                
+                    <li class="file page">contact.html</li>
+                
+                    <li class="file page">index.html</li>
+                
+                    <li class="file page">portfolio.html</li>
+                
+                    
+                
+                   
+                
+                </ul>
+
+            </ul>
+
+            <hr>
+
+            <!-- How To -->
+            <h3 id="how-to"><strong>How To?</strong> - <a href="#information">top</a></h3>
+
+            <h6 id="#edittext">How to change Header Logo</h6>
+            <p>Just write here your desired logo location in your html file line number 27.</p>
+            <img src="assets/images/LOGO.jpg">
+
+      
+            <br><br><br><br>
+
+            <h6 id="#edittext">How to set Footer Social Links</h6>
+
+            <p><b>For Facebook,</b> add url at line number 603.</p>
+            <img src="assets/images/FACEBOOK.jpg">
+
+            <br><br><br>
+
+            <p><b>For Twitter,</b> add url at line number 606.</p>
+            <img src="assets/images/TWITTER.jpg">
+
+            <br><br><br>
+
+            <p><b>For dribbble,</b> add url at line number 609.</p>
+            <img src="assets/images/DRIBBLE.jpg">
+
+            <br><br><br>
+
+            <p><b>For Linked In,</b> add url at line number 612.</p>
+            <img src="assets/images/LINKEDIN.jpg">
+
+            <br><br><br>
+
+            <br><br><br><br>
+
+            <!-- Credits -->
+            <h3 id="credits"><strong>Sources and Credits</strong> - <a href="#information">top</a></h3>
+
+            <div class="narrow-p">
+
+                <p><strong>Free fonts:</strong></p>
+
+                <ul>			
+                    <li><a href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet" target="_blank">Proza Libre</a></li>
+                    <li><a href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" target="_blank">Open sans</a></li>
+                </ul>
+
+                <hr class="space">
+
+                <p><strong>Icons:</strong></p>
+
+                <ul>			
+                    <li><a href="https://fontawesome.com/v4.7.0/" target="_blank">Font Awesome 4.7.0</a> (Icons)</li>
+                    <li><a href="https://www.flaticon.com/" target="_blank">Flate Icon</a> (Icons)</li>
+                </ul>
+
+                <hr class="space">       
+
+                <p><strong>Images:</strong></p>
+
+                <p><a href="https://www.pexels.com/">pexels.com</a>       ,      <a href="https://www.freepik.com/">freepik.com</a></p>
+
+                <hr class="space">
+
+                <!-- Credits -->
+
+                <p><strong>Support:</strong></p>
+                <p>If you need any help using the file or need special customizing please feel free to contact me via my Themeforest
+                profile. If you have a moment, please rate this item, I’ll appreciate it very much!….Thank you.</p>
+                <p>I am always happy to help you. Please, contact me from my profile page.</p>
+
+                <hr class="space">
+
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- end div .container -->
+
+</body>
+
+</html>

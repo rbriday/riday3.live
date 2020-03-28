@@ -1,0 +1,853 @@
+@media (min-width:320px) and (max-width: 575.98px) {
+
+    .navbar-brand img {
+        width: 85%;
+    }
+
+    .navbar-toggler i {
+        color: #fff;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        background: #222;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 34px;
+    }
+
+    #banner .banner-text button span {
+        padding: 7px 32px;
+    }
+
+    #about .about-head h3 {
+        font-size: 30px;
+    }
+
+    #about .about-head h3::before {
+        display: none;
+    }
+
+    #about .about-head h3::after {
+        display: none;
+    }
+
+    #about .about-head p {
+        padding: 0px 0;
+
+    }
+
+    #about .about-img::after {
+        display: none;
+    }
+
+    #about .about-item h3 {
+        font-size: 25px;
+    }
+
+    .social-icon {
+        text-align: center;
+    }
+
+    #about .social-icon i {
+        margin: 0 5px;
+    }
+
+    .about-button {
+        text-align: center;
+    }
+
+    #about .about-skill-head h3 {
+        margin-top: 94px;
+        padding-bottom: 0px;
+    }
+
+    #about .skill-item {
+        width: 100%;
+        margin-bottom: 4px;
+        margin-top: 15px;
+    }
+
+    #service .service-head h3 {
+        font-size: 30px;
+    }
+
+    #service .service-item .service-text p {
+        padding-top: 10px;
+    }
+
+    #service .service-head h3::before {
+        display: none;
+    }
+
+    #service .service-head h3::after {
+        display: none;
+    }
+
+    #service .service-head p {
+        padding: 0;
+    }
+
+    #protfolio .prot-head h3 {
+        font-size: 30px;
+    }
+
+    #protfolio .prot-head h3::before {
+        display: none;
+    }
+
+    #protfolio .prot-head h3::after {
+        display: none;
+    }
+
+    #protfolio .prot-head p {
+        padding: 0;
+    }
+
+    #protfolio .port-button button {
+        margin-bottom: 0;
+        margin-top: -10px;
+    }
+
+    #testimonial .test-head h3 {
+        font-size: 30px;
+    }
+
+    #testimonial .test-head h3::before {
+        display: none;
+    }
+
+    #testimonial .test-head h3::after {
+        display: none;
+    }
+
+    #testimonial .test-head p {
+        padding: 0px;
+    }
+
+    #testimonial .test-text p {
+        padding: 0 10px;
+    }
+
+    #testimonial .test-icon-right i {
+        display: none;
+    }
+
+    #testimonial .test-icon-left i {
+        display: none;
+    }
+
+    #counter .counter-item {
+        margin-bottom: 45px;
+    }
+    #counter .counter-item h3::after {
+	top: -11px;
+	left: 33%;
+}
+    #counter {
+        padding-top: 55px;
+    }
+
+    #pricing {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+
+    .pricing-head h3 {
+        font-size: 30px;
+    }
+
+    .pricing-head h3::before {
+        display: none;
+    }
+
+    .pricing-head h3::after {
+        display: none;
+    }
+
+    .pricing-head p {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .price-item .price-item-content h6::after {
+        width: 81%;
+    }
+
+    .price-item-2 .price-item-content h6::after {
+        width: 80%;
+    }
+
+    .blog-head h3 {
+        font-size: 30px;
+    }
+
+    .blog-head h3::before {
+        display: none;
+    }
+
+    .blog-head h3::after {
+        display: none;
+    }
+
+    .blog-head p {
+        padding: 0;
+    }
+
+    .contact-part-1 {
+        text-align: center;
+    }
+
+    .cont-icon-1 {
+        margin-bottom: 30px;
+    }
+
+    .cont-text-2 {
+        text-align: center;
+    }
+
+    .cont-manu {
+        text-align: center;
+    }
+
+    .cont-text-3 {
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .form-item input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-item textarea {
+        width: 100%;
+    }
+
+    .contact-head button {
+        margin-bottom: 40px;
+    }
+
+    .footer-last {
+        padding: 10px;
+        line-height: 23px;
+
+    }
+
+    @media(min-width: 480px) and (max-width: 575px) {
+
+        #protfolio .port-button button {
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        #testimonial .test-head p {
+            padding: 0;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        .blog-head p {
+            padding: 0;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+
+        @media(max-width:575px) {
+            #counter .counter-item h3::after {
+                left: 41%;
+            }
+        }
+
+    @media(max-width: 480px){
+    #counter .counter-item h3::after {
+	left: 39%;
+   }
+    } 
+
+
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .navbar-brand img {
+        width: 85%;
+    }
+
+    .navbar-toggler i {
+        color: #fff;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        background: #222;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 34px;
+    }
+
+    #banner .banner-text button span {
+        padding: 7px 32px;
+    }
+
+    #about .about-head h3 {
+        font-size: 30px;
+    }
+
+    #about .about-head h3::before {
+        display: none;
+    }
+
+    #about .about-head h3::after {
+        display: none;
+    }
+
+    #about .about-head p {
+        padding: 0px 0;
+
+    }
+
+    #about .about-img::after {
+        display: none;
+    }
+
+    #about .about-item h3 {
+        font-size: 25px;
+    }
+
+    .social-icon {
+        text-align: center;
+    }
+
+    #about .social-icon i {
+        margin: 0 5px;
+    }
+
+    .about-button {
+        text-align: center;
+    }
+
+    #about .about-skill-head h3 {
+        margin-top: 94px;
+        padding-bottom: 0px;
+    }
+
+    #about .skill-item {
+        width: 100%;
+        margin-bottom: 4px;
+        margin-top: 15px;
+    }
+
+    #service .service-head h3 {
+        font-size: 30px;
+    }
+
+    #service .service-item .service-text p {
+        padding-top: 10px;
+    }
+
+    #service .service-item .service-text h3 {
+        font-size: 26px;
+    }
+
+    #service .service-head h3::before {
+        display: none;
+    }
+
+    #service .service-head h3::after {
+        display: none;
+    }
+
+    #service .service-head p {
+        padding: 0;
+    }
+
+    #protfolio .prot-head h3 {
+        font-size: 30px;
+    }
+
+    #protfolio .prot-head h3::before {
+        display: none;
+    }
+
+    #protfolio .prot-head h3::after {
+        display: none;
+    }
+
+    #protfolio .prot-head p {
+        padding: 0;
+    }
+
+    #protfolio .port-button button {
+        margin-bottom: 0;
+        margin-top: -10px;
+    }
+
+    #testimonial .test-head h3 {
+        font-size: 30px;
+    }
+
+    #testimonial .test-head h3::before {
+        display: none;
+    }
+
+    #testimonial .test-head h3::after {
+        display: none;
+    }
+
+    #testimonial .test-head p {
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #testimonial .test-text p {
+        padding: 0 10px;
+    }
+
+    #testimonial .test-icon-right i {
+        display: none;
+    }
+
+    #testimonial .test-icon-left i {
+        display: none;
+    }
+
+    .counter-item {
+        margin-bottom: 45px;
+    }
+
+    #counter {
+        padding-top: 55px;
+    }
+
+    #pricing {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+
+    .pricing-head h3 {
+        font-size: 30px;
+    }
+
+    .pricing-head h3::before {
+        display: none;
+    }
+
+    .pricing-head h3::after {
+        display: none;
+    }
+
+    .pricing-head p {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .price-item .price-item-content h6::after {
+        width: 81%;
+    }
+
+    .price-item-2 .price-item-content h6::after {
+        width: 80%;
+    }
+
+    .blog-head h3 {
+        font-size: 30px;
+    }
+
+    .blog-head h3::before {
+        display: none;
+    }
+
+    .blog-head h3::after {
+        display: none;
+    }
+
+    .blog-head p {
+        padding: 0;
+    }
+
+    .contact-part-1 {
+        text-align: center;
+    }
+
+    .cont-icon-1 {
+        margin-bottom: 30px;
+    }
+
+    .cont-text-2 {
+        text-align: center;
+    }
+
+    .cont-manu {
+        text-align: center;
+    }
+
+    .cont-text-3 {
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .form-item input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-item textarea {
+        width: 100%;
+    }
+
+    .contact-head button {
+        margin-bottom: 40px;
+    }
+
+    .footer-last {
+        padding: 10px;
+        line-height: 23px;
+
+    }
+
+
+
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    #about .about-head h3::before {
+        right: 22%;
+    }
+
+    #about .about-head h3::after {
+        left: 22%;
+    }
+
+    #about .about-head p {
+        padding: 0px 55px;
+
+    }
+
+    #about .about-item {
+        margin-top: 36px;
+    }
+
+    #about .social-icon i {
+        margin-top: 0;
+
+    }
+
+    #about .about-item h3 {
+        font-size: 23px;
+    }
+
+    #about .about-skill-head h3 {
+        margin-top: 60px;
+    }
+
+    #about .skill-item {
+        width: 219px;
+
+    }
+
+    #about .skill-1 {
+        width: 90%;
+    }
+
+    #about .skill-2 {
+        width: 50%;
+    }
+
+    #about .skill-3 {
+        width: 80%;
+    }
+
+    #about .skill-4 {
+        width: 50%;
+    }
+
+    #about .skill-5 {
+        width: 50%;
+    }
+
+    #about .skill-6 {
+        width: 70%;
+    }
+
+    #service .service-head h3::before {
+        right: 19%;
+    }
+
+    #service .service-head h3::after {
+        left: 19%;
+    }
+
+    #service .service-head p {
+        padding: 0 55px;
+    }
+
+    #protfolio .prot-head h3::before {
+        right: 22%;
+    }
+
+    #protfolio .prot-head h3::after {
+        left: 22%;
+    }
+
+    #protfolio .prot-head p {
+        padding: 0 55px;
+        ;
+    }
+
+    #testimonial .test-head h3::before {
+        right: 19%;
+    }
+
+    #testimonial .test-head h3::after {
+        left: 19%;
+    }
+
+    #testimonial .test-head p {
+        padding: 0 55px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    #testimonial .test-text p {
+        padding: 0 18px;
+
+    }
+
+    #testimonial .test-icon-right {
+        right: -73px;
+
+    }
+
+    #testimonial .test-icon-left {
+        left: -73px;
+    }
+
+    #counter {
+        padding-top: 50px;
+    }
+
+    .counter-item {
+        margin-bottom: 50px;
+    }
+#counter .counter-item h3::after {
+    left: 32%;
+}
+    #pricing {
+        padding-top: 20px;
+        padding-bottom: 39px;
+    }
+
+    .pricing-head h3::before {
+        right: 26%;
+
+    }
+
+    .pricing-head h3::after {
+        left: 26%;
+    }
+
+    .pricing-head p {
+        padding: 0 55px;
+
+    }
+
+    .price-item .price-item-content h6::after {
+        width: 80%;
+    }
+
+    .price-item-2 .price-item-content h6::after {
+        width: 80%;
+    }
+
+    .price-item {
+        margin-top: 30px;
+    }
+
+    .price-item-2 {
+        margin-top: 30px;
+    }
+
+    #counter .counter-item h3::after {
+        left: 34%;
+    }
+
+    .blog-head h3::before {
+        right: 13%;
+    }
+
+    .blog-head h3::after {
+        left: 13%;
+    }
+
+    .blog-head p {
+        padding: 0 55px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 19px;
+    }
+
+    .contact-part-1 {
+        text-align: center;
+    }
+
+    .cont-text-3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .cont-text-2 {
+        text-align: center;
+    }
+
+    .cont-manu {
+        text-align: center;
+    }
+
+    .count-last-head {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .contact-head button {
+        margin-bottom: 60px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #about .about-skill-head h3 {
+        margin-top: 60px;
+    }
+
+    #about .about-head h3::before {
+        right: 29%;
+    }
+
+    #about .about-head h3::after {
+        left: 29%;
+    }
+
+    #about .skill-item {
+        width: 100%;
+    }
+
+    #about .skill-1 {
+        width: 90%;
+    }
+
+    #about .skill-2 {
+        width: 50%;
+    }
+
+    #about .skill-3 {
+        width: 80%;
+    }
+
+    #about .skill-4 {
+        width: 50%;
+    }
+
+    #about .skill-5 {
+        width: 50%;
+    }
+
+    #about .skill-6 {
+        width: 70%;
+    }
+
+    #protfolio .prot-head h3::before {
+        right: 28%;
+    }
+
+    #protfolio .prot-head h3::after {
+        left: 28%;
+    }
+
+    #protfolio .port-button button {
+        margin-bottom: 20px;
+    }
+
+    #testimonial .test-head h3::before {
+        right: 26%;
+    }
+
+    #testimonial .test-head h3::after {
+        left: 26%;
+    }
+
+    #counter {
+        padding-top: 74px;
+    }
+
+    .pricing-head h3::before {
+        right: 31%;
+    }
+
+    .pricing-head h3::afte {
+        left: 31%;
+    }
+    .price-item .price-item-content h6::after {
+	width: 80%;
+}
+    .price-item-2 .price-item-content h6::after {
+	width: 80%;
+}
+    .blog-head h3::before {
+	right: 20%;
+}
+    .blog-head h3::after {
+	left: 20%;
+}
+    .cont-icon-1 i {
+	margin: 0 3px;
+}
+    #counter .counter-item h3::after {
+	left: 26%;
+}
+
+
+}
+
+
+@media (min-width: 1200px) {
+    #counter .counter-item h3::after {
+	left: 31%;
+
+}
+}
